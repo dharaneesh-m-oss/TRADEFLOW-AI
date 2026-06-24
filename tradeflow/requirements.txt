@@ -1,0 +1,25 @@
+# Core dependencies (required)
+streamlit>=1.28.0
+reportlab>=4.0.0
+pillow>=10.0.0
+python-dotenv>=1.0.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# PDF support (optional - install separately if needed)
+# pdf2image>=1.16.0
+# Note: Requires poppler-utils. Install via conda or download separately.
+
+# OCR dependencies (optional - install separately)
+# Option 1: PaddleOCR (best accuracy, requires PaddlePaddle)
+#   Windows: pip install paddlepaddle -i https://pypi.tuna.tsinghua.edu.cn/simple
+#   Then: pip install paddleocr
+# Option 2: EasyOCR (easier Windows install)
+#   pip install easyocr
+# Option 3: Tesseract (lightweight)
+#   pip install pytesseract
+#   Also install Tesseract OCR: https://github.com/UB-Mannheim/tesseract/wiki
+
+# ML dependencies (optional for hackathon MVP)
+# transformers>=4.35.0
+# torch>=2.1.0

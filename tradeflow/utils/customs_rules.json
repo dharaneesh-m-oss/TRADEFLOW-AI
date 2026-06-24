@@ -1,0 +1,239 @@
+{
+  "USA": {
+    "country_code": "US",
+    "required_fields": [
+      "invoice_number",
+      "date",
+      "seller_name",
+      "buyer_name",
+      "items",
+      "total_amount",
+      "currency",
+      "ship_from",
+      "ship_to",
+      "country_origin"
+    ],
+    "optional_fields": [
+      "weight",
+      "hs_code",
+      "unit_price",
+      "quantity"
+    ],
+    "hs_code_validation": {
+      "min_length": 6,
+      "max_length": 10,
+      "format": "numeric"
+    },
+    "currency_codes": ["USD"],
+    "duty_calculation": {
+      "base_rate": 0.02,
+      "processing_fee": 25.00,
+      "harbor_maintenance_fee": 0.00125
+    },
+    "form_name": "CBP Form 7501",
+    "form_fields": {
+      "entry_number": "auto_generated",
+      "importer_name": "buyer_name",
+      "exporter_name": "seller_name",
+      "country_of_origin": "country_origin",
+      "port_of_entry": "ship_to",
+      "date_of_entry": "date",
+      "invoice_number": "invoice_number",
+      "total_value": "total_amount",
+      "duty_amount": "calculated",
+      "items": "items"
+    }
+  },
+  "India": {
+    "country_code": "IN",
+    "required_fields": [
+      "invoice_number",
+      "date",
+      "seller_name",
+      "buyer_name",
+      "items",
+      "total_amount",
+      "currency",
+      "ship_from",
+      "ship_to",
+      "hs_code",
+      "country_origin"
+    ],
+    "optional_fields": [
+      "weight",
+      "unit_price",
+      "quantity"
+    ],
+    "hs_code_validation": {
+      "min_length": 8,
+      "max_length": 8,
+      "format": "numeric"
+    },
+    "currency_codes": ["INR", "USD", "EUR"],
+    "duty_calculation": {
+      "base_rate": 0.10,
+      "igst_rate": 0.18,
+      "cess_rate": 0.00,
+      "processing_fee": 1000.00
+    },
+    "form_name": "Bill of Entry",
+    "form_fields": {
+      "be_number": "auto_generated",
+      "importer_name": "buyer_name",
+      "exporter_name": "seller_name",
+      "country_of_origin": "country_origin",
+      "port_of_entry": "ship_to",
+      "date_of_entry": "date",
+      "invoice_number": "invoice_number",
+      "total_value": "total_amount",
+      "duty_amount": "calculated",
+      "igst_amount": "calculated",
+      "items": "items",
+      "hs_code": "hs_code"
+    },
+    "languages": ["en", "ta", "hi"]
+  },
+  "EU": {
+    "country_code": "EU",
+    "required_fields": [
+      "invoice_number",
+      "date",
+      "seller_name",
+      "buyer_name",
+      "items",
+      "total_amount",
+      "currency",
+      "ship_from",
+      "ship_to",
+      "hs_code",
+      "country_origin"
+    ],
+    "optional_fields": [
+      "weight",
+      "unit_price",
+      "quantity"
+    ],
+    "hs_code_validation": {
+      "min_length": 6,
+      "max_length": 10,
+      "format": "numeric"
+    },
+    "currency_codes": ["EUR", "USD", "GBP"],
+    "duty_calculation": {
+      "base_rate": 0.03,
+      "vat_rate": 0.20,
+      "processing_fee": 15.00
+    },
+    "form_name": "Single Administrative Document (SAD)",
+    "form_fields": {
+      "sad_number": "auto_generated",
+      "importer_name": "buyer_name",
+      "exporter_name": "seller_name",
+      "country_of_origin": "country_origin",
+      "port_of_entry": "ship_to",
+      "date_of_entry": "date",
+      "invoice_number": "invoice_number",
+      "total_value": "total_amount",
+      "duty_amount": "calculated",
+      "vat_amount": "calculated",
+      "items": "items",
+      "hs_code": "hs_code"
+    }
+  },
+  "China": {
+    "country_code": "CN",
+    "required_fields": [
+      "invoice_number",
+      "date",
+      "seller_name",
+      "buyer_name",
+      "items",
+      "total_amount",
+      "currency",
+      "ship_from",
+      "ship_to",
+      "hs_code",
+      "country_origin"
+    ],
+    "optional_fields": [
+      "weight",
+      "unit_price",
+      "quantity"
+    ],
+    "hs_code_validation": {
+      "min_length": 8,
+      "max_length": 10,
+      "format": "numeric"
+    },
+    "currency_codes": ["CNY", "USD", "EUR"],
+    "duty_calculation": {
+      "base_rate": 0.05,
+      "vat_rate": 0.13,
+      "processing_fee": 50.00
+    },
+    "form_name": "Customs Declaration Form",
+    "form_fields": {
+      "declaration_number": "auto_generated",
+      "importer_name": "buyer_name",
+      "exporter_name": "seller_name",
+      "country_of_origin": "country_origin",
+      "port_of_entry": "ship_to",
+      "date_of_entry": "date",
+      "invoice_number": "invoice_number",
+      "total_value": "total_amount",
+      "duty_amount": "calculated",
+      "vat_amount": "calculated",
+      "items": "items",
+      "hs_code": "hs_code"
+    }
+  },
+  "Brazil": {
+    "country_code": "BR",
+    "required_fields": [
+      "invoice_number",
+      "date",
+      "seller_name",
+      "buyer_name",
+      "items",
+      "total_amount",
+      "currency",
+      "ship_from",
+      "ship_to",
+      "hs_code",
+      "country_origin"
+    ],
+    "optional_fields": [
+      "weight",
+      "unit_price",
+      "quantity"
+    ],
+    "hs_code_validation": {
+      "min_length": 8,
+      "max_length": 10,
+      "format": "numeric"
+    },
+    "currency_codes": ["BRL", "USD", "EUR"],
+    "duty_calculation": {
+      "base_rate": 0.08,
+      "icms_rate": 0.18,
+      "ipi_rate": 0.10,
+      "processing_fee": 150.00
+    },
+    "form_name": "DI (Declaração de Importação)",
+    "form_fields": {
+      "di_number": "auto_generated",
+      "importer_name": "buyer_name",
+      "exporter_name": "seller_name",
+      "country_of_origin": "country_origin",
+      "port_of_entry": "ship_to",
+      "date_of_entry": "date",
+      "invoice_number": "invoice_number",
+      "total_value": "total_amount",
+      "duty_amount": "calculated",
+      "icms_amount": "calculated",
+      "ipi_amount": "calculated",
+      "items": "items",
+      "hs_code": "hs_code"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Trade Compliance Checker</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>AI Trade Compliance Checker</h1>
+
+    <div class="upload-box">
+        <input type="file" id="fileInput" accept="image/*">
+        <button onclick="uploadFile()">Check Compliance</button>
+    </div>
+
+    <div id="loader" class="loader hidden"></div>
+
+    <div id="result" class="result hidden">
+        <div id="statusBadge" class="badge"></div>
+
+        <h3>Extracted Data</h3>
+        <pre id="extractedData"></pre>
+
+        <h3>Compliance Result</h3>
+        <pre id="complianceData"></pre>
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
